@@ -36,7 +36,7 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %{_bindir}/xpr
 %{_bindir}/xdpr
-%{_mandir}/man1/xdpr.1*.bz2
-%{_mandir}/man1/xpr.1*.bz2
+%{_mandir}/man1/xdpr.1*
+%{_mandir}/man1/xpr.1*
 
 
