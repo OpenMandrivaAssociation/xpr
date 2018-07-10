@@ -1,6 +1,6 @@
 Name:		xpr
 Version:	1.0.5
-Release:	1
+Release:	2
 Summary:	Dump an X window directly to a printer
 Group:		Development/X11
 License:	MIT
