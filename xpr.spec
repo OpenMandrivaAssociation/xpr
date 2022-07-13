@@ -1,11 +1,11 @@
 Name:		xpr
-Version:	1.0.5
-Release:	3
+Version:	1.1.0
+Release:	1
 Summary:	Dump an X window directly to a printer
 Group:		Development/X11
 License:	MIT
 URL:		http://xorg.freedesktop.org
-Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
+Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.xz
 
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xmu)
@@ -20,13 +20,13 @@ printer, the HP LaserJet (or other PCL printers), or the HP PaintJet.
 %setup -q
 
 %build
-%configure2_5x	--x-includes=%{_includedir}\
+%configure	--x-includes=%{_includedir}\
 		--x-libraries=%{_libdir}
 
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %{_bindir}/xpr
